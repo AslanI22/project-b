@@ -4,8 +4,8 @@ from datetime import datetime
 
 
 def get_current_date() -> str:
-    """Возвращает текущую дату в формате DD.MM.YYYY (Dev A)."""
-    return datetime.now().strftime("%d.%m.%Y")
+    """Возвращает текущую дату в формате YYYY-MM-DD (после разрешения конфликта)."""
+    return datetime.now().strftime("%Y-%m-%d")
 
 
 def format_date(dt: datetime, fmt: str = "%d.%m.%Y") -> str:
