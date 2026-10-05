@@ -11,3 +11,7 @@ def get_current_date() -> str:
 def format_date(dt: datetime, fmt: str = "%d.%m.%Y") -> str:
     """Форматирует дату по заданному шаблону."""
     return dt.strftime(fmt)
+
+def days_between(date1: datetime, date2: datetime) -> int:
+    """Возвращает количество дней между двумя датами."""
+    return abs((date2 - date1).days)
