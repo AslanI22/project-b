@@ -13,3 +13,7 @@ def capitalize_words(s: str) -> str:
 def count_words(s: str) -> int:
     """Возвращает количество слов в строке."""
     return len(s.split())
+
+def to_upper(s: str) -> str:
+    """Переводит строку в верхний регистр."""
+    return s.upper()

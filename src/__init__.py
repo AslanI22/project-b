@@ -1,7 +1,12 @@
 """Project B — utils library."""
 
 from .date_utils import get_current_date, format_date, days_between
-from .string_utils import reverse_string, capitalize_words, count_words
+from .string_utils import (
+    reverse_string,
+    capitalize_words,
+    count_words,
+    to_upper,
+)
 
 __all__ = [
     "get_current_date",
@@ -10,4 +15,5 @@ __all__ = [
     "reverse_string",
     "capitalize_words",
     "count_words",
+    "to_upper",
 ]
